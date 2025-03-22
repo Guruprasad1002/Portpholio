@@ -3,16 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeMenu = document.querySelector(".close_menu");
     const mobileMenu = document.querySelector(".mobile_menu_nav");
 
+    closeMenu.style.display = "none";
+
     function showMenu() {
         mobileMenu.classList.add("active");
-        openMenu.style.display = "none";
-        closeMenu.style.display = "block";
+        openMenu.style.display = "none"; 
+        closeMenu.style.display = "block"; 
     }
 
     function hideMenu() {
         mobileMenu.classList.remove("active");
         openMenu.style.display = "block";
-        closeMenu.style.display = "none";
+        closeMenu.style.display = "none"; 
     }
 
     openMenu.addEventListener("click", function (event) {
